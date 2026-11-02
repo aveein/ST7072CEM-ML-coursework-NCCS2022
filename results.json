@@ -1,0 +1,500 @@
+{
+ "n_households": 6508,
+ "n_features": 56,
+ "n_num": 33,
+ "n_cat": 23,
+ "n_encoded": 115,
+ "pos_rate": 0.3896742470805163,
+ "n_pos": 2536,
+ "any_affected_rate": 0.936539643515673,
+ "train": [
+  5209,
+  261,
+  0.3899020925321559
+ ],
+ "test": [
+  1299,
+  65,
+  0.3887605850654349
+ ],
+ "tuning": {
+  "Logistic Regression": {
+   "best_params": {
+    "C": 0.01,
+    "penalty": "l2"
+   },
+   "cv_f1_mean": 0.6414376400803747,
+   "cv_f1_sd": 0.024439355048551055
+  },
+  "Decision Tree": {
+   "best_params": {
+    "criterion": "gini",
+    "max_depth": 6,
+    "min_samples_leaf": 25
+   },
+   "cv_f1_mean": 0.6094689529787909,
+   "cv_f1_sd": 0.030804472864330953
+  },
+  "SVM (RBF)": {
+   "best_params": {
+    "C": 1,
+    "gamma": "scale"
+   },
+   "cv_f1_mean": 0.645625116352396,
+   "cv_f1_sd": 0.030564999006589367
+  }
+ },
+ "cv": {
+  "Logistic Regression": {
+   "accuracy": [
+    0.6890976183988814,
+    0.023785767497539842
+   ],
+   "precision": [
+    0.5839378247146602,
+    0.02994819661024934
+   ],
+   "recall": [
+    0.7130178491263718,
+    0.03385006655649956
+   ],
+   "f1": [
+    0.6414376400803747,
+    0.024439355048551055
+   ],
+   "roc_auc": [
+    0.7440219261333046,
+    0.022278152558588827
+   ]
+  },
+  "Decision Tree": {
+   "accuracy": [
+    0.6462453940238149,
+    0.02500731554273444
+   ],
+   "precision": [
+    0.5367712687393944,
+    0.029085614912936483
+   ],
+   "recall": [
+    0.7115464687256572,
+    0.07742376377298023
+   ],
+   "f1": [
+    0.6094689529787909,
+    0.030804472864330953
+   ],
+   "roc_auc": [
+    0.707418726654317,
+    0.03288133572658291
+   ]
+  },
+  "SVM (RBF)": {
+   "accuracy": [
+    0.7084873123374038,
+    0.024135417460323393
+   ],
+   "precision": [
+    0.615011906356992,
+    0.03317220148485098
+   ],
+   "recall": [
+    0.6824708121757239,
+    0.05066635388685487
+   ],
+   "f1": [
+    0.645625116352396,
+    0.030564999006589367
+   ],
+   "roc_auc": [
+    0.7670700836518399,
+    0.02555151758986928
+   ]
+  }
+ },
+ "test_results": {
+  "Logistic Regression": {
+   "Accuracy": 0.654,
+   "Precision": 0.545,
+   "Recall": 0.667,
+   "F1": 0.6,
+   "ROC-AUC": 0.704,
+   "Macro F1": 0.648
+  },
+  "Decision Tree": {
+   "Accuracy": 0.637,
+   "Precision": 0.524,
+   "Recall": 0.747,
+   "F1": 0.616,
+   "ROC-AUC": 0.719,
+   "Macro F1": 0.636
+  },
+  "SVM (RBF)": {
+   "Accuracy": 0.663,
+   "Precision": 0.559,
+   "Recall": 0.628,
+   "F1": 0.591,
+   "ROC-AUC": 0.724,
+   "Macro F1": 0.652
+  }
+ },
+ "confusion": {
+  "Logistic Regression": [
+   [
+    513,
+    281
+   ],
+   [
+    168,
+    337
+   ]
+  ],
+  "Decision Tree": [
+   [
+    451,
+    343
+   ],
+   [
+    128,
+    377
+   ]
+  ],
+  "SVM (RBF)": [
+   [
+    544,
+    250
+   ],
+   [
+    188,
+    317
+   ]
+  ]
+ },
+ "importance_top": {
+  "province": {
+   "Logistic Regression": 0.0308,
+   "Decision Tree": 0.075,
+   "SVM (RBF)": 0.0393
+  },
+  "agri_service_received": {
+   "Logistic Regression": 0.009,
+   "Decision Tree": 0.0347,
+   "SVM (RBF)": 0.0059
+  },
+  "house_type": {
+   "Logistic Regression": 0.002,
+   "Decision Tree": 0.0333,
+   "SVM (RBF)": 0.0045
+  },
+  "land_ha": {
+   "Logistic Regression": -0.0008,
+   "Decision Tree": 0.0184,
+   "SVM (RBF)": 0.0085
+  },
+  "has_agri_holding": {
+   "Logistic Regression": 0.0111,
+   "Decision Tree": 0.0,
+   "SVM (RBF)": 0.0113
+  },
+  "area_risk_rating": {
+   "Logistic Regression": 0.0105,
+   "Decision Tree": 0.0,
+   "SVM (RBF)": 0.0112
+  },
+  "log_inc_crops": {
+   "Logistic Regression": 0.0063,
+   "Decision Tree": 0.0077,
+   "SVM (RBF)": 0.0064
+  },
+  "main_livelihood": {
+   "Logistic Regression": 0.0067,
+   "Decision Tree": 0.0053,
+   "SVM (RBF)": 0.007
+  },
+  "km_market": {
+   "Logistic Regression": 0.0039,
+   "Decision Tree": 0.0089,
+   "SVM (RBF)": 0.0033
+  },
+  "community_org": {
+   "Logistic Regression": 0.0098,
+   "Decision Tree": 0.0,
+   "SVM (RBF)": 0.0059
+  },
+  "internet": {
+   "Logistic Regression": 0.0012,
+   "Decision Tree": -0.0003,
+   "SVM (RBF)": 0.0147
+  },
+  "toilet": {
+   "Logistic Regression": 0.0034,
+   "Decision Tree": 0.0,
+   "SVM (RBF)": 0.0107
+  }
+ },
+ "lr_coef_top": {
+  "province_Lumbini": -0.561,
+  "province_Koshi": 0.295,
+  "house_type_Permanent": -0.256,
+  "house_type_Temporary": 0.252,
+  "toilet_Ordinary": 0.247,
+  "province_Madhesh": -0.237,
+  "main_livelihood_Agriculture": 0.23,
+  "eco_belt_Hill": -0.201,
+  "province_Gandaki": 0.18,
+  "toilet_Flush toilet (Public sewarage)": -0.173
+ },
+ "fairness": [
+  {
+   "Model": "Logistic Regression",
+   "Belt": "Mountain",
+   "n": 180,
+   "High-impact rate": 0.456,
+   "Recall": 0.915,
+   "F1": 0.641,
+   "Accuracy": 0.533
+  },
+  {
+   "Model": "Logistic Regression",
+   "Belt": "Hill",
+   "n": 520,
+   "High-impact rate": 0.363,
+   "Recall": 0.635,
+   "F1": 0.606,
+   "Accuracy": 0.7
+  },
+  {
+   "Model": "Logistic Regression",
+   "Belt": "Tarai",
+   "n": 599,
+   "High-impact rate": 0.391,
+   "Recall": 0.607,
+   "F1": 0.576,
+   "Accuracy": 0.651
+  },
+  {
+   "Model": "Decision Tree",
+   "Belt": "Mountain",
+   "n": 180,
+   "High-impact rate": 0.456,
+   "Recall": 0.866,
+   "F1": 0.609,
+   "Accuracy": 0.494
+  },
+  {
+   "Model": "Decision Tree",
+   "Belt": "Hill",
+   "n": 520,
+   "High-impact rate": 0.363,
+   "Recall": 0.825,
+   "F1": 0.664,
+   "Accuracy": 0.696
+  },
+  {
+   "Model": "Decision Tree",
+   "Belt": "Tarai",
+   "n": 599,
+   "High-impact rate": 0.391,
+   "Recall": 0.641,
+   "F1": 0.575,
+   "Accuracy": 0.629
+  },
+  {
+   "Model": "SVM (RBF)",
+   "Belt": "Mountain",
+   "n": 180,
+   "High-impact rate": 0.456,
+   "Recall": 0.78,
+   "F1": 0.615,
+   "Accuracy": 0.556
+  },
+  {
+   "Model": "SVM (RBF)",
+   "Belt": "Hill",
+   "n": 520,
+   "High-impact rate": 0.363,
+   "Recall": 0.582,
+   "F1": 0.603,
+   "Accuracy": 0.721
+  },
+  {
+   "Model": "SVM (RBF)",
+   "Belt": "Tarai",
+   "n": 599,
+   "High-impact rate": 0.391,
+   "Recall": 0.611,
+   "F1": 0.573,
+   "Accuracy": 0.644
+  }
+ ],
+ "leakage": {
+  "Logistic Regression": {
+   "Random split F1": 0.65,
+   "Grouped split F1": 0.6,
+   "Difference": 0.05
+  },
+  "Decision Tree": {
+   "Random split F1": 0.644,
+   "Grouped split F1": 0.616,
+   "Difference": 0.028
+  },
+  "SVM (RBF)": {
+   "Random split F1": 0.675,
+   "Grouped split F1": 0.591,
+   "Difference": 0.084
+  }
+ },
+ "rate_by_belt": {
+  "Hill": 0.358,
+  "Mountain": 0.55,
+  "Tarai": 0.372
+ },
+ "rate_by_prov": {
+  "Bagmati": 0.333,
+  "Gandaki": 0.401,
+  "Karnali": 0.493,
+  "Koshi": 0.524,
+  "Lumbini": 0.179,
+  "Madhesh": 0.324,
+  "Sudurpaschim": 0.523
+ },
+ "rate_by_risk": {
+  "Very Low": 0.395,
+  "Low": 0.442,
+  "Moderate": 0.302,
+  "High": 0.2,
+  "Very High": 0.292
+ },
+ "corr_top": {
+  "asset_count": -0.232,
+  "log_inc_nonagri": -0.185,
+  "km_market": 0.135,
+  "log_inc_crops": 0.126,
+  "log_inc_total": -0.117,
+  "log_inc_livestock": 0.115,
+  "km_ward_office": 0.114,
+  "km_health": 0.094
+ },
+ "baselines": {
+  "Baseline: always \"low/moderate\"": {
+   "Accuracy": 0.611,
+   "Precision": 0.0,
+   "Recall": 0.0,
+   "F1": 0.0,
+   "ROC-AUC": 0.5,
+   "Macro F1": 0.379
+  },
+  "Baseline: always \"high\"": {
+   "Accuracy": 0.389,
+   "Precision": 0.389,
+   "Recall": 1.0,
+   "F1": 0.56,
+   "ROC-AUC": 0.5,
+   "Macro F1": 0.28
+  },
+  "Baseline: random (stratified)": {
+   "Accuracy": 0.545,
+   "Precision": 0.416,
+   "Recall": 0.422,
+   "F1": 0.419,
+   "ROC-AUC": 0.523,
+   "Macro F1": 0.523
+  }
+ },
+ "imbalance": {
+  "Decision Tree | Class weights (main)": {
+   "Threshold": 0.5,
+   "CV F1": 0.609,
+   "Accuracy": 0.637,
+   "Precision": 0.524,
+   "Recall": 0.747,
+   "F1": 0.616,
+   "ROC-AUC": 0.719
+  },
+  "Decision Tree | SMOTE": {
+   "Threshold": 0.5,
+   "CV F1": 0.584,
+   "Accuracy": 0.644,
+   "Precision": 0.542,
+   "Recall": 0.533,
+   "F1": 0.537,
+   "ROC-AUC": 0.688
+  },
+  "Decision Tree | Class weights + tuned threshold": {
+   "Threshold": 0.37,
+   "CV F1": 0.625,
+   "Accuracy": 0.63,
+   "Precision": 0.515,
+   "Recall": 0.846,
+   "F1": 0.64,
+   "ROC-AUC": 0.719
+  },
+  "Logistic Regression | Class weights (main)": {
+   "Threshold": 0.5,
+   "CV F1": 0.641,
+   "Accuracy": 0.654,
+   "Precision": 0.545,
+   "Recall": 0.667,
+   "F1": 0.6,
+   "ROC-AUC": 0.704
+  },
+  "Logistic Regression | SMOTE": {
+   "Threshold": 0.5,
+   "CV F1": 0.637,
+   "Accuracy": 0.65,
+   "Precision": 0.54,
+   "Recall": 0.669,
+   "F1": 0.598,
+   "ROC-AUC": 0.697
+  },
+  "Logistic Regression | Class weights + tuned threshold": {
+   "Threshold": 0.47,
+   "CV F1": 0.644,
+   "Accuracy": 0.644,
+   "Precision": 0.531,
+   "Recall": 0.707,
+   "F1": 0.607,
+   "ROC-AUC": 0.704
+  },
+  "SVM (RBF) | Class weights (main)": {
+   "Threshold": 0.5,
+   "CV F1": 0.646,
+   "Accuracy": 0.663,
+   "Precision": 0.559,
+   "Recall": 0.628,
+   "F1": 0.591,
+   "ROC-AUC": 0.724
+  },
+  "SVM (RBF) | SMOTE": {
+   "Threshold": 0.5,
+   "CV F1": 0.628,
+   "Accuracy": 0.649,
+   "Precision": 0.548,
+   "Recall": 0.558,
+   "F1": 0.553,
+   "ROC-AUC": 0.715
+  },
+  "SVM (RBF) | Class weights + tuned threshold": {
+   "Threshold": 0.29,
+   "CV F1": 0.653,
+   "Accuracy": 0.656,
+   "Precision": 0.54,
+   "Recall": 0.77,
+   "F1": 0.635,
+   "ROC-AUC": 0.724
+  }
+ },
+ "thresholds": {
+  "Logistic Regression": 0.47,
+  "Decision Tree": 0.37,
+  "SVM (RBF)": 0.29
+ },
+ "missing_top": {
+  "resp_edu_years": 1.4,
+  "province": 0.0,
+  "resp_age": 0.0,
+  "resp_sex": 0.0,
+  "years_in_community": 0.0,
+  "household_size": 0.0
+ }
+}

@@ -1,0 +1,19 @@
+# NSO NCCS 2022 microdata must NOT be pushed (licence: no redistribution)
+Climate Change Survey-2022/
+data/
+*.dta
+*.sav
+*.csv
+*.zip
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
